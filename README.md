@@ -45,6 +45,8 @@ Key parameters:
 
 | Regime | Parameters | Behavior |
 |--------|------------|----------|
+| Laminar Collapse | `collapse_threshold=0.05 to 0.1`| 
+| Turbulent Collapse | `collapse_threshold=0.15 to 0.25`| Corresponds to typical Reynolds number values of 2000 to 4000|
 | Collapse | `collapse_threshold=0.25`, `viscosity=5.0` | Flow decays sharply, entropy spikes |
 | Subcritical | `collapse_threshold=0.37`, `viscosity=3.0` | Flow remains high, entropy gradient oscillates gently |
 
