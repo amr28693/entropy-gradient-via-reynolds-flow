@@ -4,7 +4,7 @@ _A minimal simulation-based framework for collapse detection in discrete systems
 ## Overview
 
 This repository contains code supporting the preprint:  
-**"Entropy Production Mirrors Reynolds Flow Collapse"**  
+"Entropy Production Mirrors Reynolds Flow Collapse"  
 by Anderson M. Rodriguez (arXiv:2025.xxxxx)
 
 We demonstrate that in discrete dynamical systems, the entropy gradient can be approximated by the negative time derivative of an average flow observable:
@@ -15,10 +15,10 @@ Here, \( \langle R \rangle \) is a generalized Reynolds-like quantity computed f
 
 ## Simulation Description
 
-- **Nodes**: Represent system components
-- **Edges**: Represent dynamic, weighted connections (inverse weights ∼ flow)
-- **Collapse threshold**: Optional condition to stop growth
-- **Flow observable**:  
+Nodes: Represent system components
+Edges: Represent dynamic, weighted connections (inverse weights ∼ flow)
+Collapse threshold: Optional condition to stop growth
+Flow observable:  
   \[
   \langle R \rangle_t = \frac{1}{|E|} \sum_{(i,j)} \frac{1}{w_{ij}}
   \]
