@@ -9,7 +9,7 @@ by Anderson M. Rodriguez (arXiv:2025.xxxxx)
 
 We demonstrate that in discrete dynamical systems, the entropy gradient can be approximated by the negative time derivative of an average flow observable:
 \[
-\frac{dS}{dt} \sim -\frac{d\langle R \rangle}{dt}
+\frac{dS}{dt} \sim -\frac{dR}{dt}
 \]
 Here, \( \langle R \rangle \) is a generalized Reynolds-like quantity computed from inverse edge weights on a dynamic network. This minimal formulation links collapse, instability, and entropy production across complex systems without requiring full thermodynamic or continuum models.
 
@@ -20,11 +20,11 @@ Edges: Represent dynamic, weighted connections (inverse weights ∼ flow)
 Collapse threshold: Optional condition to stop growth
 Flow observable:  
   \[
-  \langle R \rangle_t = \frac{1}{|E|} \sum_{(i,j)} \frac{1}{w_{ij}}
+  R_t = \frac{1}{|E|} \sum_{(i,j)} \frac{1}{w_{ij}}
   \]
-- **Entropy gradient**:  
+- Entropy gradient:  
   \[
-  \frac{dS}{dt} \approx -\left( \langle R \rangle_t - \langle R \rangle_{t-1} \right)
+  \frac{dS}{dt} \approx -R_t - R_{t-1})
   \]
 
 Plots are generated for:
